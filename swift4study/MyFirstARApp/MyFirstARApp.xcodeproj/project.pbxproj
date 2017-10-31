@@ -13,6 +13,8 @@
 		61088A751FA160CB006D2579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61088A731FA160CB006D2579 /* Main.storyboard */; };
 		61088A771FA160CB006D2579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61088A761FA160CB006D2579 /* Assets.xcassets */; };
 		61088A7A1FA160CB006D2579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61088A781FA160CB006D2579 /* LaunchScreen.storyboard */; };
+		615A566D1FA6C55700ACFA97 /* GridPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615A566C1FA6C55700ACFA97 /* GridPlane.swift */; };
+		615A566F1FA6C71400ACFA97 /* overlay_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 615A566E1FA6C71300ACFA97 /* overlay_grid.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		61088A761FA160CB006D2579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61088A791FA160CB006D2579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61088A7B1FA160CB006D2579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		615A566C1FA6C55700ACFA97 /* GridPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridPlane.swift; sourceTree = "<group>"; };
+		615A566E1FA6C71300ACFA97 /* overlay_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_grid.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				61088A6D1FA160CB006D2579 /* AppDelegate.swift */,
 				61088A6F1FA160CB006D2579 /* art.scnassets */,
 				61088A711FA160CB006D2579 /* ViewController.swift */,
+				615A566C1FA6C55700ACFA97 /* GridPlane.swift */,
+				615A566E1FA6C71300ACFA97 /* overlay_grid.png */,
 				61088A731FA160CB006D2579 /* Main.storyboard */,
 				61088A761FA160CB006D2579 /* Assets.xcassets */,
 				61088A781FA160CB006D2579 /* LaunchScreen.storyboard */,
@@ -127,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61088A701FA160CB006D2579 /* art.scnassets in Resources */,
+				615A566F1FA6C71400ACFA97 /* overlay_grid.png in Resources */,
 				61088A7A1FA160CB006D2579 /* LaunchScreen.storyboard in Resources */,
 				61088A771FA160CB006D2579 /* Assets.xcassets in Resources */,
 				61088A751FA160CB006D2579 /* Main.storyboard in Resources */,
@@ -140,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				615A566D1FA6C55700ACFA97 /* GridPlane.swift in Sources */,
 				61088A721FA160CB006D2579 /* ViewController.swift in Sources */,
 				61088A6E1FA160CB006D2579 /* AppDelegate.swift in Sources */,
 			);

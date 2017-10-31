@@ -17,19 +17,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="q0U-tk-x6l">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </mapView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EDn-XL-Kaj">
+                                <rect key="frame" x="0.0" y="360" width="375" height="191"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDf-tJ-QlU">
+                                <rect key="frame" x="20" y="581" width="335" height="36"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="写真を撮る">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GEj-eX-ILs"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MmB-nv-tfB">
+                                <rect key="frame" x="295" y="44" width="70" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="0dA-h9-pp0"/>
+                                    <constraint firstAttribute="width" constant="70" id="pcI-il-drb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="q0U-tk-x6l" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4pm-Zp-s5g"/>
-                            <constraint firstAttribute="trailing" secondItem="q0U-tk-x6l" secondAttribute="trailing" id="DMs-7v-t7q"/>
-                            <constraint firstItem="q0U-tk-x6l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="glu-Tp-vjc"/>
-                            <constraint firstItem="q0U-tk-x6l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rYn-Z7-Ed5"/>
+                            <constraint firstItem="EDn-XL-Kaj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6iK-sy-UT0"/>
+                            <constraint firstItem="MmB-nv-tfB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="7Lv-7b-JH6"/>
+                            <constraint firstItem="EDn-XL-Kaj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Kv-OY-68k"/>
+                            <constraint firstItem="MmB-nv-tfB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FG6-eW-cit"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MmB-nv-tfB" secondAttribute="trailing" constant="10" id="IWp-zr-l9Z"/>
+                            <constraint firstItem="DDf-tJ-QlU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UtF-p9-YeM"/>
+                            <constraint firstItem="EDn-XL-Kaj" firstAttribute="top" secondItem="MmB-nv-tfB" secondAttribute="bottom" constant="40" id="hTe-vf-uh8"/>
+                            <constraint firstItem="DDf-tJ-QlU" firstAttribute="top" secondItem="EDn-XL-Kaj" secondAttribute="bottom" constant="30" id="xmA-1W-lig"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DDf-tJ-QlU" secondAttribute="trailing" constant="20" id="yJW-xW-00J"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="photoDisplay" destination="MmB-nv-tfB" id="h2n-6s-dAV"/>
+                        <outlet property="photoInfoDisplay" destination="EDn-XL-Kaj" id="EWL-2w-jKw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
